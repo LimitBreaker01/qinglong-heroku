@@ -1,24 +1,23 @@
 {
-  "name": "qinglong",
-  "description": "qinglong run in your Heroku",
-  "repository": "https://github.com/xiaoxiaofeixf/qinglong",
-  "logo": "https://camo.githubusercontent.com/a5ba062da9a9e860e790c3fae9b943988becc83897ab2c7722b6d66f3f4c4e30/68747470733a2f2f7a332e617831782e636f6d2f323032312f31312f31382f49374d7041652e706e67",
-  "keywords": [
-    "node",
-    "express",
-    "qinglong",
-    "cloud-development",
-    "heroku-api"
-  ],
-  "env": {
-    "username": {
-      "description": "username",
-      "required": false
+    "name": "qinglong",
+    "description": "Deploy qinglong on Heroku.",
+    "keywords": ["qinglong"],
+    "env": {
+            "TZ": {
+              "description": "时区",
+              "value": "Asia/Shanghai"
+            },
+            "ENTRYPOINT_URL": {
+              "description": "提供启动运行脚本文件下载链接，用于覆盖默认的启动脚本，可以为空",
+              "value": "https://raw.githubusercontent.com/yzqiang666/mydoc/main/entrypoint0.sh",
+              "required": false      
+            },  
+            "LANG": {
+              "description": "编码格式",
+              "value": "en_US.UTF-8"
+            }
     },
-    "PASSWORD": {
-      "description": "password",
-      "required": false
-    }
-  },
-  "stack": "container"
+    "website": "",
+    "repository": "",
+    "stack": "container"
 }
