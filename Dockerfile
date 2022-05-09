@@ -18,7 +18,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && touch ~/.bashrc \
     && git clone -b ${QL_BRANCH} ${QL_URL} ${QL_DIR} \
     && git clone -b ${QL_BRANCH} https://github.com/yzqiang666/qinglong-heroku.git /ql/start \
-    && git config --global user.email "qinglong@@users.noreply.github.com" \
+    && git config --global user.email "qinglong@users.noreply.github.com" \
     && git config --global user.name "qinglong" \
     && git config --global pull.rebase true \
     && cd ${QL_DIR} \
